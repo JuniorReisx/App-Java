@@ -1,60 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:gravity="center">
 
-    <!-- Texto informativo sobre a cotação do dólar -->
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Cotação do Dólar"
-        android:textSize="20sp"
+        android:textSize="22sp"
         android:textStyle="bold"
-        android:layout_marginBottom="8dp" />
+        android:textColor="#000000"
+        android:layout_marginBottom="16dp"
+        android:gravity="center" />
 
-    <!-- Campo para digitar o valor em reais -->
     <EditText
         android:id="@+id/edtValor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Digite o valor em reais"
         android:inputType="numberDecimal"
-        android:layout_marginBottom="16dp" />
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:layout_marginBottom="24dp" />
 
-    <!-- Botão para converter o valor em reais para dólares -->
     <Button
         android:id="@+id/btnTest"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Converter para Dólar"
-        android:layout_marginBottom="16dp" />
+        android:textColor="#FFF"
+        android:backgroundTint="#3982b8"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        android:textSize="16sp" />
 
-    <!-- Exibição do resultado da conversão -->
     <TextView
         android:id="@+id/txtResult"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Resultado em dólares"
         android:textSize="18sp"
+        android:textColor="#000000"
         android:gravity="center"
-        android:layout_marginBottom="16dp" />
+        android:layout_marginBottom="24dp" />
 
-    <!-- Botão para navegar para a tela de subtração -->
-    <Button
-        android:id="@+id/btnSubtrair"
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ir para Tela de Subtração"
-        android:layout_marginBottom="8dp" />
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
 
-    <!-- Botão para navegar para a tela de soma -->
-    <Button
-        android:id="@+id/btnSomar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Ir para Tela de Soma" />
+        <Button
+            android:id="@+id/btnSubtrair"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ir para Tela de Subtração"
+            android:textColor="#FFF"
+            android:backgroundTint="#6200EE"
+            android:layout_marginEnd="8dp"
+            android:padding="12dp"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnSomar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ir para Tela de Soma"
+            android:textColor="#FFF"
+            android:backgroundTint="#6200EE"
+            android:layout_marginStart="8dp"
+            android:padding="12dp"
+            android:textSize="16sp" />
+    </LinearLayout>
 
 </LinearLayout>

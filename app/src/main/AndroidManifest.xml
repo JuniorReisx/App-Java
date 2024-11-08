@@ -16,6 +16,9 @@
             android:name=".TelaSubtrair"
             android:exported="false" />
         <activity
+            android:name=".TelaSoma"
+            android:exported="false" />
+        <activity
             android:name=".Tela2"
             android:exported="false" />
         <activity

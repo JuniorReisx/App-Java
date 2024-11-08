@@ -10,7 +10,7 @@
         android:id="@+id/txtTitulo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Tela de Subtração"
+        android:text="Tela de Soma"
         android:textSize="24sp"
         android:gravity="center"
         android:textColor="#000000"
@@ -37,10 +37,10 @@
         android:textSize="16sp" />
 
     <Button
-        android:id="@+id/btnSubtrair"
+        android:id="@+id/btnSomar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Subtrair"
+        android:text="Somar"
         android:textColor="#FFF"
         android:backgroundTint="#3982b8"
         android:layout_marginBottom="16dp"
